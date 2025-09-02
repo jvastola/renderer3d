@@ -5,14 +5,7 @@ pub struct Vertex {
 }
 
 impl Vertex {
-    pub const ATTRIBS: [wgpu::VertexAttribute; 1] = wgpu::vertex_attr_array![0 => Float32x3];
-    pub fn desc<'a>() -> wgpu::VertexBufferLayout<'a> {
-        wgpu::VertexBufferLayout {
-            array_stride: std::mem::size_of::<Vertex>() as wgpu::BufferAddress,
-            step_mode: wgpu::VertexStepMode::Vertex,
-            attributes: &Self::ATTRIBS,
-        }
-    }
+    // Removed wgpu vertex attributes and layout for software rasterizer
 }
 
 pub const CUBE_VERTICES: &[Vertex] = &[
