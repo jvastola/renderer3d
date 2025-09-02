@@ -1,0 +1,11 @@
+[package]
+name = "renderer3d"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wgpu = "0.16"
+winit = "0.28"
+pollster = "0.3"
+cgmath = "0.18.0"
+bytemuck = { version = "1.23.2", features = ["derive"] }
