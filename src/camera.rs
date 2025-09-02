@@ -1,4 +1,4 @@
-use cgmath::{Matrix4, Point3, Vector3, Deg, perspective, SquareMatrix};
+use cgmath::{Matrix4, Point3, Vector3, Deg, perspective };
 
 pub struct Camera {
     pub eye: Point3<f32>,

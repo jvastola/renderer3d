@@ -3,6 +3,7 @@ use winit::dpi::PhysicalSize;
 use wgpu::{Device, Queue, Surface, SurfaceConfiguration};
 use crate::camera::Camera;
 use crate::renderer::Renderer;
+// ...existing code...
 
 pub struct State {
     pub surface: Surface,
@@ -12,6 +13,7 @@ pub struct State {
     pub size: PhysicalSize<u32>,
     pub camera: Camera,
     pub renderer: Renderer,
+    // EntityManager can be added here if you want to manage entities in State
 }
 
 impl State {
